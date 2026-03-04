@@ -1,0 +1,26 @@
+#  Copyright (c) 2012-2026, Deutsche Pfadfinder*innenschaft Sankt Georg. This file is part of
+#  hitobito_dpsg and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_dpsg.
+
+
+admin:
+  first_name: Chief
+  last_name: Admin
+  email: admin@hitobito.example.com
+  gender: m
+  contact_data_visible: true
+  primary_group: root
+
+leader:
+  first_name: A
+  last_name: Leader
+  email: a.leader@hitobito.example.com
+  contact_data_visible: true
+  primary_group: root
+
+member:
+  first_name: My
+  last_name: Member
+  email: member0@hitobito.example.com
+  primary_group: root

@@ -1,0 +1,14 @@
+# frozen_string_literal: true
+
+#  Copyright (c) 2012-2026, Deutsche Pfadfinder*innenschaft Sankt Georg. This file is part of
+#  hitobito_dpsg and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_dpsg.
+
+require "wagons"
+# require 'your_wagon_dependencies'
+require "hitobito_pfadi_de"
+require "hitobito_dpsg/wagon"
+
+module HitobitoDpsg
+end

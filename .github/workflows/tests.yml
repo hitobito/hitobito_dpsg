@@ -1,0 +1,40 @@
+name: 'Lint and test'
+
+on:
+  push:
+    branches:
+      - master
+      - stable
+    paths-ignore:
+      - 'doc/**'
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - 'doc/**'
+      - '**.md'
+  workflow_dispatch: # Allow triggering manually
+    inputs:
+      core_ref:
+        description: Use a specific version of the core for the workflow run. Defaults to master.
+        type: string
+        default: ''
+      wagon_dependency_ref:
+        description: Use a specific version of the wagon dependency for the workflow run. Defaults to master.
+        type: string
+        default: ''
+      distinct_id:
+        description: An optional identifier which is simply output again, in order to identify the workflow run when triggered from another repo
+        type: string
+        default: ''
+jobs:
+  wagon_tests:
+    uses: hitobito/hitobito/.github/workflows/wagon-tests.yml@master
+    with:
+      wagon_repository: ${{ github.event.repository.name }}
+      wagon_dependency_repository: hitobito_pfadi_de
+      core_ref: ${{ inputs.core_ref }}
+      wagon_dependency_ref: ${{ inputs.wagon_dependency_ref }}
+      distinct_id: ${{ inputs.distinct_id }}
+    secrets:
+      HEARTBEAT_URL: ${{ secrets.HEARTBEAT_URL }}
+      HEARTBEAT_TOKEN: ${{ secrets.HEARTBEAT_TOKEN }}

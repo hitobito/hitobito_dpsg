@@ -1,0 +1,56 @@
+# frozen_string_literal: true
+
+#  Copyright (c) 2012-2026, Deutsche Pfadfinder*innenschaft Sankt Georg. This file is part of
+#  hitobito_dpsg and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_dpsg.
+
+require "spec_helper"
+
+describe :event_external_application do
+  subject { page }
+
+  let(:event) do
+    Fabricate(:event, application_opening_at: 5.days.ago,
+      external_applications: true, groups: [group])
+  end
+  let(:group) { groups(:root) }
+
+  it "creates an external event participation" do
+    visit group_public_event_path(group_id: group, id: event)
+
+    find_all("#new_person input#person_email").first
+      .fill_in(with: "max.muster@hitobito.example.com")
+
+    click_button("Weiter")
+
+    fill_in "Vorname", with: "Max"
+    fill_in "Nachname", with: "Muster"
+    fill_in "Haupt-E-Mail", with: "max.muster@hitobito.example.com"
+
+    expect do
+      find_all('.top .btn-group button[type="submit"]').first.click # submit
+      is_expected.to have_text(
+        "Deine persönlichen Daten wurden aufgenommen. " \
+          "Bitte ergänze nun noch die Angaben für die Anmeldung."
+      )
+    end.to change { Person.count }.by(1)
+
+    click_link("Anmelden")
+    find_all(".bottom .btn-group").first.click_button "Weiter"
+
+    fill_in("Bemerkungen", with: "Wichtige Bemerkungen über meine Teilnahme")
+
+    expect do
+      click_button("Anmelden")
+      person = Person.find_by(email: "max.muster@hitobito.example.com")
+      expect(person).to be_present
+      is_expected.to have_text(
+        "Teilnahme von #{person.full_name} in #{event.name} wurde erfolgreich erstellt. " \
+          "Bitte überprüfe die Kontaktdaten und passe diese gegebenenfalls an."
+      )
+    end.to change { Event::Participation.count }.by(1)
+
+    is_expected.to have_text("Wichtige Bemerkungen über meine Teilnahme")
+  end
+end

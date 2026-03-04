@@ -1,0 +1,25 @@
+#  Copyright (c) 2012-2026, Deutsche Pfadfinder*innenschaft Sankt Georg. This file is part of
+#  hitobito_dpsg and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_dpsg.
+
+
+top_leader:
+  event: top_course
+  participant: leader
+  participant_type: Person
+  active: true
+
+top_course_applicant:
+  event: top_course
+  participant: member
+  participant_type: Person
+  active: false
+  application: top_course_applicant
+
+top_participant:
+  event: top_event
+  participant: member
+  participant_type: Person
+  active: true
+  application: top_participant
