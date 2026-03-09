@@ -8,9 +8,9 @@
 # Overrides settings from the main application
 application:
   logo:
-    image: bdp-logo.svg
-    width: 128
-    height: 83
+    image: dpsg-logo.svg
+    width: 240
+    height: 95
   languages:
     de: Deutsch
 

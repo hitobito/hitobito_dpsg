@@ -24,9 +24,9 @@ $white:                 #fff !default;
 
 // Colors
 // ----------------------------
-$blue:                  #1d4899 !default;
+$blue:                  #1A305B !default;
 $blue-dark:             darken($blue, 10%) !default;
-$green:                 #ffcb04 !default;
+$green:                 #e8e6dc !default;
 $green-dark:            darken($green, 10%) !default;
 
 $orange:                #d30014;
@@ -55,9 +55,9 @@ $table-color-hover:      lighten($purple, 50%);
 // Typography
 // -------------------------
 
-$sans-font-family:      Aleo, sans-serif;
-$heading-font-family:   Immenhausen, sans-serif;
-$font-family-base:      Aleo, sans-serif;
+$sans-font-family:      'PT Sans', sans-serif;
+$heading-font-family:   'Suez One', sans-serif;
+$font-family-base:      'PT Sans', sans-serif;
 $headings-font-weight:  normal !default; // instead of browser default, bold
 
 // Decoration

@@ -228,8 +228,8 @@ de:
         other: Sonstige Arbeitsbereiche
 
       group/land_arbeitsbereich/beauftragt:
-        one: Landesbeauftragte*r
-        description: Landesbeauftragte*r
+        one: Diözesansbeauftragte*r
+        description: Diözesansbeauftragte*r
       group/land_arbeitsbereich/ak_leitung:
         one: AK Leiter*in
         description: AK Leiter*in
@@ -443,20 +443,20 @@ de:
         other: Gruppen
 
       group/landesverband:
-        one: Landesverband
-        other: Landesverbände
+        one: Diözesanverband
+        other: Diözesanverbände
 
       group/landesvorstand:
-        one: Landesvorstand
-        other: Landesvorstände
+        one: Diözesansvorstand
+        other: Diözesansvorstände
 
       group/landesgeschaeftsstelle:
-        one: Landesgeschäftsstelle
-        other: Landesgeschäftsstellen
+        one: Diözesansgeschäftsstelle
+        other: Diözesansgeschäftsstellen
 
       group/landesversammlung:
-        one: Landesversammlung
-        other: Landesversammlungen
+        one: Diözesansversammlung
+        other: Diözesansversammlungen
 
       group/bezirk:
         one: Bezirk
@@ -629,8 +629,8 @@ de:
         description: Geschäftsstelle
 
       group/landesverband/landesmitgliederverwaltung:
-        one: Landesmitgliederverwalter*in
-        description: Landesmitgliederverwalter*in
+        one: Diözesansmitgliederverwalter*in
+        description: Diözesansmitgliederverwalter*in
       group/landesverband/erfassung_fuehrungszeugnis:
         one: Erfasser*in Führungszeugnis
         description: Erfasser*in Führungszeugnis
@@ -641,8 +641,8 @@ de:
         one: Stammeskompass-Moderator*in
         description: Stammeskompass-Moderator*in
       group/landesverband/landesmitarbeiter:
-        one: Landesmitarbeiter*in
-        description: Landesmitarbeiter*in
+        one: Diözesansmitarbeiter*in
+        description: Diözesansmitarbeiter*in
       group/landesverband/juleica_inhaber:
         one: Juleica-Inhaber*in
         description: Juleica-Inhaber*in
@@ -665,24 +665,24 @@ de:
         one: Bundeslager Mitarbeiter*in Unterlager
         description: Bundeslager Mitarbeiter*in Unterlager
       group/landesverband/landeswahlobmensch:
-        one: Landeswahlobmensch
-        description: Landeswahlobmensch
+        one: Diözesanswahlobmensch
+        description: Diözesanswahlobmensch
       group/landesverband/zuschussbeauftragt:
         one: Zuschussbeauftrage*r
         description: Zuschussbeauftrage*r
 
       group/landesvorstand/landesvorsitz:
-        one: Landesvorsitzende*r
-        description: Landesvorsitzende*r
+        one: Diözesansvorsitzende*r
+        description: Diözesansvorsitzende*r
       group/landesvorstand/landesvorsitz_stv:
-        one: Stv. Landesvorsitzende*r
-        description: Stv. Landesvorsitzende*r
+        one: Stv. Diözesansvorsitzende*r
+        description: Stv. Diözesansvorsitzende*r
       group/landesvorstand/landesschatzmeister:
-        one: Landesschatzmeister*in
-        description: Landesschatzmeister*in
+        one: Diözesansschatzmeister*in
+        description: Diözesansschatzmeister*in
       group/landesvorstand/landesschatzmeister_stv:
-        one: Stv. Landesschatzmeister*in
-        description: Stv. Landesschatzmeister*in
+        one: Stv. Diözesansschatzmeister*in
+        description: Stv. Diözesansschatzmeister*in
       group/landesvorstand/empfaenger_aufnahmeantrag_lv_unter18:
         one: Empfänger*in Aufnahmeantrag LV Unter18
         description: Empfänger*in Aufnahmeantrag LV Unter18
@@ -691,8 +691,8 @@ de:
         description: Empfänger*in Aufnahmeantrag LV Über18
 
       group/landesgeschaeftsstelle/landesgeschaeftsfuehrung:
-        one: Landesgeschäftsführer*in
-        description: Landesgeschäftsführer*in
+        one: Diözesansgeschäftsführer*in
+        description: Diözesansgeschäftsführer*in
       group/landesgeschaeftsstelle/hauptamtlich_sachbearbeitung:
         one: Hauptamtliche Sachbearbeiter*in
         description: Hauptamtliche Sachbearbeiter*in
@@ -798,11 +798,11 @@ de:
         one: Stammesbeauftragte*r
         description: Stammesbeauftragte*r
       group/stamm/landesdelegiert:
-        one: Landesdelegierte*r
-        description: Landesdelegierte*r
+        one: Diözesansdelegierte*r
+        description: Diözesansdelegierte*r
       group/stamm/landesdelegiert_ersatz:
-        one: Ersatz-Landesdelegierte*r
-        description: Ersatz-Landesdelegierte*r
+        one: Ersatz-Diözesansdelegierte*r
+        description: Ersatz-Diözesansdelegierte*r
       group/stamm/bezirksdelegiert:
         one: Bezirksdelegierte*r
         description: Bezirksdelegierte*r
