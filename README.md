@@ -9,22 +9,22 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
 <!-- roles:start -->
     * Bundesebene
       * Bundesebene
-        * MV-Administrator*in: 2FA [:layer_and_below_full, :admin, :impersonation]
+        * MV-Administrator*in: 2FA [:layer_and_below_full, :admin, :finance, :impersonation, :assign_restricted_fee_kinds]
         * Erfasser*in Führungszeugnis: 2FA [:layer_and_below_read, :group_and_below_efz]
         * Kassenprüfer*in: []
         * Bundesmitarbeiter*in: []
       * Bundesvorstand
-        * Bundesvorsitzende*r: 2FA [:layer_and_below_full, :contact_data]
-        * Stv. Bundesvorsitzende*r: 2FA [:layer_and_below_full, :contact_data]
-        * Bundesschatzmeister*in: 2FA [:layer_and_below_full, :contact_data, :finance]
-        * Stv. Bundesschatzmeister*in: 2FA [:layer_and_below_full, :contact_data, :finance]
+        * Bundesvorsitzende*r: 2FA [:layer_and_below_full, :contact_data, :assign_restricted_fee_kinds]
+        * Stv. Bundesvorsitzende*r: 2FA [:layer_and_below_full, :contact_data, :assign_restricted_fee_kinds]
+        * Bundesschatzmeister*in: 2FA [:layer_and_below_full, :contact_data, :finance, :assign_restricted_fee_kinds]
+        * Stv. Bundesschatzmeister*in: 2FA [:layer_and_below_full, :contact_data, :finance, :assign_restricted_fee_kinds]
         * Empfänger*in Aufnahmeantrag Über18: []
       * Bundesgeschäftsstelle
-        * Bundesgeschäftsführer*in: 2FA [:layer_and_below_full, :admin, :contact_data, :finance]
-        * Mitgliederverwalter*in Bund: 2FA [:layer_and_below_full, :admin, :contact_data, :finance]
-        * Hauptamtliche Sachbearbeiter*in: 2FA [:layer_and_below_full, :contact_data]
-        * Hauptamtliche Referent*in: 2FA [:layer_and_below_read, :contact_data]
-        * Hauptamtliche*r: 2FA [:contact_data]
+        * Bundesgeschäftsführer*in: 2FA [:layer_and_below_full, :admin, :contact_data, :finance, :assign_restricted_fee_kinds]
+        * Mitgliederverwalter*in Bund: 2FA [:layer_and_below_full, :admin, :contact_data, :finance, :assign_restricted_fee_kinds]
+        * Hauptamtliche Sachbearbeiter*in: 2FA [:layer_and_below_full, :contact_data, :assign_restricted_fee_kinds]
+        * Hauptamtliche Referent*in: 2FA [:layer_and_below_read, :contact_data, :assign_restricted_fee_kinds]
+        * Hauptamtliche*r: 2FA [:contact_data, :assign_restricted_fee_kinds]
       * Ombudsrat
         * Mitglied: []
       * Betrieb
@@ -64,13 +64,13 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
       * Inklusion
       * Wachstum und Stämme
       * Sonstiger Arbeitsbereich
-    * Landesverband < Bundesebene
-      * Landesverband
-        * Landesmitgliederverwalter*in: 2FA [:layer_and_below_full, :contact_data]
+    * Diözesanverband < Bundesebene
+      * Diözesanverband
+        * Diözesansmitgliederverwalter*in: 2FA [:layer_and_below_full, :contact_data, :assign_restricted_fee_kinds]
         * Erfasser*in Führungszeugnis: 2FA [:layer_and_below_read, :group_and_below_efz]
         * Kassenprüfer*in: []
         * Stammeskompass-Moderator*in: []
-        * Landesmitarbeiter*in: []
+        * Diözesansmitarbeiter*in: []
         * Juleica-Inhaber*in: []
         * Materialwart*in: []
         * Bundesdelegierte*r: []
@@ -78,21 +78,21 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
         * Bundeslager Unterlagerleiter*in: []
         * Bundeslager Unterlagerbereichsleiter*in: []
         * Bundeslager Mitarbeiter*in Unterlager: []
-        * Landeswahlobmensch: []
+        * Diözesanswahlobmensch: []
         * Zuschussbeauftrage*r: []
-      * Landesvorstand
-        * Landesvorsitzende*r: 2FA [:layer_and_below_read, :contact_data]
-        * Stv. Landesvorsitzende*r: 2FA [:layer_and_below_read, :contact_data]
-        * Landesschatzmeister*in: 2FA [:layer_and_below_read, :contact_data, :finance]
-        * Stv. Landesschatzmeister*in: 2FA [:layer_and_below_read, :contact_data, :finance]
+      * Diözesansvorstand
+        * Diözesansvorsitzende*r: 2FA [:layer_and_below_read, :contact_data]
+        * Stv. Diözesansvorsitzende*r: 2FA [:layer_and_below_read, :contact_data]
+        * Diözesansschatzmeister*in: 2FA [:layer_and_below_read, :contact_data, :finance, :assign_restricted_fee_kinds]
+        * Stv. Diözesansschatzmeister*in: 2FA [:layer_and_below_read, :contact_data, :finance, :assign_restricted_fee_kinds]
         * Empfänger*in Aufnahmeantrag LV Unter18: []
         * Empfänger*in Aufnahmeantrag LV Über18: []
-      * Landesgeschäftsstelle
-        * Landesgeschäftsführer*in: 2FA [:layer_and_below_full, :contact_data, :finance]
+      * Diözesansgeschäftsstelle
+        * Diözesansgeschäftsführer*in: 2FA [:layer_and_below_full, :contact_data, :finance]
         * Hauptamtliche Sachbearbeiter*in: 2FA [:layer_and_below_read, :contact_data]
         * Hauptamtliche Referent*in: 2FA [:layer_and_below_read, :contact_data]
         * Hauptamtliche*r: 2FA [:contact_data]
-      * Landesversammlung
+      * Diözesansversammlung
         * Versammlungsleiter*in: []
         * Protokollführer*in: []
         * Techniker*in: []
@@ -116,7 +116,7 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
       * Inklusion
       * Wachstum und Stämme
       * Sonstiger Arbeitsbereich
-    * Bezirk < Landesverband
+    * Bezirk < Diözesanverband
       * Bezirk
         * Bezirkssprecher*in: 2FA [:layer_and_below_read, :contact_data]
         * Stv. Bezirkssprecher*in: 2FA [:layer_and_below_read, :contact_data]
@@ -151,12 +151,12 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
       * Inklusion
       * Wachstum und Stämme
       * Sonstiger Arbeitsbereich
-    * Stamm < Bezirk, Landesverband
+    * Stamm < Bezirk, Diözesanverband
       * Stamm
-        * Stammesführer*in: [:group_read]
-        * Stv. Stammesführer*in: [:group_read]
-        * Stammesschatzmeister*in: [:group_read, :finance]
-        * Stv. Stammesschatzmeister*in: [:group_read, :finance]
+        * Stammesführer*in: [:layer_and_below_read]
+        * Stv. Stammesführer*in: [:layer_and_below_read]
+        * Stammesschatzmeister*in: [:layer_and_below_read, :finance]
+        * Stv. Stammesschatzmeister*in: [:layer_and_below_read, :finance]
         * Empfänger*in Aufnahmeantrag in Stammesführung: []
         * Stammesmitgliederverwalter*in: 2FA [:layer_and_below_full]
         * Erfasser*in Führungszeugnis: 2FA [:layer_and_below_read, :group_and_below_efz]
@@ -169,8 +169,8 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
         * Heimwart*in: []
         * Juleica-Inhaber*in: []
         * Stammesbeauftragte*r: []
-        * Landesdelegierte*r: []
-        * Ersatz-Landesdelegierte*r: []
+        * Diözesansdelegierte*r: []
+        * Ersatz-Diözesansdelegierte*r: []
         * Bezirksdelegierte*r: []
         * Stammesgeschäftsstelle: []
       * Arbeitsbereiche
@@ -199,8 +199,8 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
         * Stv. Meutenführer*in: [:group_read]
         * Wölfling: []
       * Gilde
-        * Gildenführer*in: [:group_read]
-        * Stv. Gildenführer*in: [:group_read]
+        * Gildenführer*in: [:group_and_below_read]
+        * Stv. Gildenführer*in: [:group_and_below_read]
       * Sippe
         * Sippenführer*in: [:group_read]
         * Stv. Sippenführer*in: [:group_read]
@@ -230,21 +230,21 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
         * Adressverwaltung: [:group_and_below_full]
         * Kontakt: []
       * Global
-        * Bezirksbeauftragte*r: [:group_read]
-        * AK Leiter*in: [:group_read]
-        * AK Mitarbeiter*in: [:group_read]
+        * Bezirksbeauftragte*r: [:layer_and_below_read]
+        * AK Leiter*in: [:group_and_below_read]
+        * AK Mitarbeiter*in: [:group_and_below_read]
         * AK Freie*r Mitarbeiter*in: []
-        * Stammesbeauftragte*r: [:group_read]
-        * AK Leiter*in: [:group_read]
-        * AK Mitarbeiter*in: [:group_read]
+        * Stammesbeauftragte*r: [:layer_and_below_read]
+        * AK Leiter*in: [:group_and_below_read]
+        * AK Mitarbeiter*in: [:group_and_below_read]
         * AK Freie*r Mitarbeiter*in: []
-        * Landesbeauftragte*r: [:group_read, :contact_data]
-        * AK Leiter*in: [:group_read, :contact_data]
-        * AK Mitarbeiter*in: [:group_read]
+        * Diözesansbeauftragte*r: [:layer_and_below_read, :contact_data]
+        * AK Leiter*in: [:group_and_below_read, :contact_data]
+        * AK Mitarbeiter*in: [:group_and_below_read]
         * AK Freie*r Mitarbeiter*in: []
-        * Bundesbeauftragte*r: [:group_read, :contact_data]
-        * AK Leiter*in: [:group_read, :contact_data]
-        * AK Mitarbeiter*in: [:group_read]
+        * Bundesbeauftragte*r: [:layer_and_below_read, :contact_data]
+        * AK Leiter*in: [:group_and_below_read, :contact_data]
+        * AK Mitarbeiter*in: [:group_and_below_read]
         * AK Freie*r Mitarbeiter*in: []
 
 (Output of rake app:hitobito:roles)
