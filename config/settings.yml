@@ -28,3 +28,5 @@ root_email: hitobito-dpsg@puzzle.ch
 membership_fees:
   relative_fee_rates:
     enabled: true
+  half_year_periods:
+    enabled: true
