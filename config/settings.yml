@@ -32,3 +32,4 @@ membership_fees:
     enabled: true
   only_active_people:
     enabled: true
+  tentative_membership_duration_months: 2
