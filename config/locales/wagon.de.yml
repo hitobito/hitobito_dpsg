@@ -3,11 +3,9 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_dpsg.
 
-
 de:
   activerecord:
     models:
-
       ### GROUPS
 
       group/bundesebene:
@@ -490,6 +488,26 @@ de:
         one: Runde
         other: Runden
 
+      group/woelflingsmeute:
+        one: Wölflingsmeute
+        other: Wölflingsmeuten
+
+      group/bibergruppe:
+        one: Bibergruppe
+        other: Bibergruppen
+
+      group/jungpfadfindertrupp:
+        one: Jungpfadfindertrupp
+        other: Jungpfadfindertrupps
+
+      group/pfadfindertrupp:
+        one: Pfadfindertrupp
+        other: Pfadfindertrupps
+
+      group/roverrunde:
+        one: Roverrunde
+        other: Roverrunden
+
       ### ROLES
 
       group/bundesebene/mv_admin:
@@ -749,21 +767,21 @@ de:
         one: Techniker*in
         description: Techniker*in
 
-      group/stamm/stammesfuehrung:
-        one: Stammesführer*in
-        description: Stammesführer*in
-      group/stamm/stammesfuehrung_stv:
-        one: Stv. Stammesführer*in
-        description: Stv. Stammesführer*in
-      group/stamm/stammesschatzmeister:
-        one: Stammesschatzmeister*in
-        description: Stammesschatzmeister*in
-      group/stamm/stammesschatzmeister_stv:
-        one: Stv. Stammesschatzmeister*in
-        description: Stv. Stammesschatzmeister*in
-      group/stamm/empfaenger_aufnahmeantrag_stammesfuehrung:
-        one: Empfänger*in Aufnahmeantrag in Stammesführung
-        description: Empfänger*in Aufnahmeantrag in Stammesführung
+      group/stamm/stammesvorstand:
+        one: Stammesvorstand
+        description: Stammesvorstand
+      group/stamm/stammesvorstand_stv:
+        one: Stv. Stammesvorstand
+        description: Stv. Stammesvorstand
+      group/stamm/stammeskassenwart:
+        one: Stammeskassenwart*in
+        description: Stammeskassenwart*in
+      group/stamm/stammeskassenwart_stv:
+        one: Stv. Stammeskassenwart*in
+        description: Stv. Stammeskassenwart*in
+      group/stamm/empfaenger_aufnahmeantrag_stammesvorstand:
+        one: Empfänger*in Aufnahmeantrag Stammesvorstand
+        description: Empfänger*in Aufnahmeantrag Stammesvorstand
       group/stamm/stammesmitgliederverwaltung:
         one: Stammesmitgliederverwalter*in
         description: Stammesmitgliederverwalter*in
@@ -782,7 +800,7 @@ de:
       group/stamm/stammeskaemmerer:
         one: Stammeskämmerer*in
         description: Stammeskämmerer*in
-      group/stamm/materialwartung:
+      group/stamm/materialwart:
         one: Materialwart*in
         description: Materialwart*in
       group/stamm/ansprechperson_heimvermietung:
@@ -846,3 +864,47 @@ de:
       group/runde/ranger_rover:
         one: Ranger/Rover
         description: Ranger/Rover
+
+      group/woelflingsmeute/leitwoelfling:
+        one: Leitwölfling
+        description: Leitwölfling
+      group/woelflingsmeute/leitwoelfling_stv:
+        one: Stv. Leitwölfling
+        description: Stv. Leitwölfling
+      group/woelflingsmeute/woelfling:
+        one: Wölfling
+        description: Wölfling
+
+      group/bibergruppe/mitglied:
+        one: Mitglied
+        description: Mitglied
+
+      group/jungpfadfindertrupp/sippensprecher_in:
+        one: Sippensprecher*in
+        description: Sippensprecher*in
+      group/jungpfadfindertrupp/sippensprecher_in_stv:
+        one: Stv. Sippensprecher*in
+        description: Stv. Sippensprecher*in
+      group/jungpfadfindertrupp/jungpfadfinder:
+        one: Jungpfadfinder*in
+        description: Jungpfadfinder*in
+
+      group/pfadfindertrupp/truppsprecher_in:
+        one: Truppsprecher*in
+        description: Truppsprecher*in
+      group/pfadfindertrupp/truppsprecher_in_stv:
+        one: Stv. Truppsprecher*in
+        description: Stv. Truppsprecher*in
+      group/pfadfindertrupp/pfadfinder:
+        one: Pfadfinder*in
+        description: Pfadfinder*in
+
+      group/roverrunde/rundensprecher:
+        one: Rundensprecher*in
+        description: Rundensprecher*in
+      group/roverrunde/rundensprecher_stv:
+        one: Stv. Rundensprecher*in
+        description: Stv. Rundensprecher*in
+      group/roverrunde/rover:
+        one: Rover*in
+        description: Rover*in
