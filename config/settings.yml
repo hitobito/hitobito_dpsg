@@ -30,3 +30,5 @@ membership_fees:
     enabled: true
   half_year_periods:
     enabled: true
+  only_active_people:
+    enabled: true
