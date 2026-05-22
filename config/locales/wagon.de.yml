@@ -58,9 +58,17 @@ de:
         one: Arbeitsbereiche
         other: Arbeitsbereiche
 
+      group/bund_biber:
+        one: Biber
+        other: Biber
+
       group/bund_woelflingsstufe:
         one: Wölflingsstufe
         other: Arbeitsbereiche
+
+      group/bund_jungpfadfinderstufe:
+        one: Jungpfadfinder*innenstufe
+        other: Jungpfadfinder*innenstufe
 
       group/bund_pfadfinderstufe:
         one: Pfadfinder*innenstufe
@@ -151,9 +159,17 @@ de:
         one: Arbeitsbereiche
         other: Arbeitsbereiche
 
+      group/land_biber:
+        one: Biber
+        other: Biber
+
       group/land_woelflingsstufe:
         one: Wölflingsstufe
         other: Arbeitsbereiche
+
+      group/land_jungpfadfinderstufe:
+        one: Jungpfadfinder*innenstufe
+        other: Jungpfadfinder*innenstufe
 
       group/land_pfadfinderstufe:
         one: Pfadfinder*innenstufe
@@ -244,9 +260,17 @@ de:
         one: Arbeitsbereiche
         other: Arbeitsbereiche
 
+      group/bezirk_biber:
+        one: Biber
+        other: Biber
+
       group/bezirk_woelflingsstufe:
         one: Wölflingsstufe
         other: Arbeitsbereiche
+
+      group/bezirk_jungpfadfinderstufe:
+        one: Jungpfadfinder*innenstufe
+        other: Jungpfadfinder*innenstufe
 
       group/bezirk_pfadfinderstufe:
         one: Pfadfinder*innenstufe
@@ -337,9 +361,17 @@ de:
         one: Arbeitsbereiche
         other: Arbeitsbereiche
 
+      group/stamm_biber:
+        one: Biber
+        other: Biber
+
       group/stamm_woelflingsstufe:
         one: Wölflingsstufe
         other: Arbeitsbereiche
+
+      group/stamm_jungpfadfinderstufe:
+        one: Jungpfadfinder*innenstufe
+        other: Jungpfadfinder*innenstufe
 
       group/stamm_pfadfinderstufe:
         one: Pfadfinder*innenstufe
