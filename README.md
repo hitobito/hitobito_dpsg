@@ -6,6 +6,120 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
 
 ## DPSG Organization Hierarchy
 
+    ▲ = Layer group
+    ¹ = Static group (only one can exist, name is predefined)
+
+* **▲Bundesebene**  --  `Bundesebene`
+  * **Arbeitsbereiche**  --  `BundArbeitsbereiche`
+    * **Ausbildung**  --  `BundAusbildung`
+    * **Erwachsenenarbeit**  --  `BundErwachsenenarbeit`
+    * **Findungskommission**  --  `BundFindungskommission`
+    * **IT**  --  `BundIt`
+    * **Inklusion**  --  `BundInklusion`
+    * **Internationales**  --  `BundInternationales`
+    * **Pfadfinder*innenstufe**  --  `BundPfadfinderstufe`
+    * **Politische Bildung/Politik und Gesellschaft**  --  `BundPolitischeBildungPolitikUndGesellschaft`
+    * **Rainbow**  --  `BundRainbow`
+    * **Ranger/Rover-Stufe**  --  `BundRangerRoverstufe`
+    * **Sonstiger Arbeitsbereich**  --  `BundSonstiges`
+    * **Stufen**  --  `BundStufen`
+    * **Wachstum und Stämme**  --  `BundWachstumUndStaemme`
+    * **Wölflingsstufe**  --  `BundWoelflingsstufe`
+    * **intakt**  --  `BundIntakt`
+      * **intakt - Macht und Miteinander**  --  `BundIntaktMachtUndMiteinander`
+      * **intakt - Prävention und Intervention**  --  `BundIntaktPraeventionUndIntervention`
+      * **intakt - psychische Gesundheit**  --  `BundIntaktPsychischeGesundheit`
+    * **Öffentlichkeitsarbeit/Medien**  --  `BundOeffentlichkeitsarbeitMedien`
+  * **Betrieb**  --  `Betrieb`
+  * **Bundesgeschäftsstelle**  --  `Bundesgeschaeftsstelle`
+  * **Bundesvorstand¹**  --  `Bundesvorstand`
+  * **▲Diözesanverband**  --  `Landesverband`
+    * **Arbeitsbereiche**  --  `LandArbeitsbereiche`
+      * **Ausbildung**  --  `LandAusbildung`
+      * **Erwachsenenarbeit**  --  `LandErwachsenenarbeit`
+      * **Findungskommission**  --  `LandFindungskommission`
+      * **IT**  --  `LandIt`
+      * **Inklusion**  --  `LandInklusion`
+      * **Internationales**  --  `LandInternationales`
+      * **Pfadfinder*innenstufe**  --  `LandPfadfinderstufe`
+      * **Politische Bildung/Politik und Gesellschaft**  --  `LandPolitischeBildungPolitikUndGesellschaft`
+      * **Rainbow**  --  `LandRainbow`
+      * **Ranger/Rover-Stufe**  --  `LandRangerRoverstufe`
+      * **Sonstiger Arbeitsbereich**  --  `LandSonstiges`
+      * **Stufen**  --  `LandStufen`
+      * **Wachstum und Stämme**  --  `LandWachstumUndStaemme`
+      * **Wölflingsstufe**  --  `LandWoelflingsstufe`
+      * **intakt**  --  `LandIntakt`
+        * **intakt - Macht und Miteinander**  --  `LandIntaktMachtUndMiteinander`
+        * **intakt - Prävention und Intervention**  --  `LandIntaktPraeventionUndIntervention`
+        * **intakt - psychische Gesundheit**  --  `LandIntaktPsychischeGesundheit`
+      * **Öffentlichkeitsarbeit/Medien**  --  `LandOeffentlichkeitsarbeitMedien`
+    * **▲Bezirk**  --  `Bezirk`
+      * **Arbeitsbereiche**  --  `BezirkArbeitsbereiche`
+        * **Ausbildung**  --  `BezirkAusbildung`
+        * **Erwachsenenarbeit**  --  `BezirkErwachsenenarbeit`
+        * **Findungskommission**  --  `BezirkFindungskommission`
+        * **IT**  --  `BezirkIt`
+        * **Inklusion**  --  `BezirkInklusion`
+        * **Internationales**  --  `BezirkInternationales`
+        * **Pfadfinder*innenstufe**  --  `BezirkPfadfinderstufe`
+        * **Politische Bildung/Politik und Gesellschaft**  --  `BezirkPolitischeBildungPolitikUndGesellschaft`
+        * **Rainbow**  --  `BezirkRainbow`
+        * **Ranger/Rover-Stufe**  --  `BezirkRangerRoverstufe`
+        * **Sonstiger Arbeitsbereich**  --  `BezirkSonstiges`
+        * **Stufen**  --  `BezirkStufen`
+        * **Wachstum und Stämme**  --  `BezirkWachstumUndStaemme`
+        * **Wölflingsstufe**  --  `BezirkWoelflingsstufe`
+        * **intakt**  --  `BezirkIntakt`
+          * **intakt - Macht und Miteinander**  --  `BezirkIntaktMachtUndMiteinander`
+          * **intakt - Prävention und Intervention**  --  `BezirkIntaktPraeventionUndIntervention`
+          * **intakt - psychische Gesundheit**  --  `BezirkIntaktPsychischeGesundheit`
+        * **Öffentlichkeitsarbeit/Medien**  --  `BezirkOeffentlichkeitsarbeitMedien`
+      * **Bezirksgeschäftsstelle**  --  `Bezirksgeschaeftsstelle`
+      * **Bezirksversammlung¹**  --  `Bezirksversammlung`
+      * **Kontakte**  --  `Kontakte`
+      * **▲Stamm**  --  `Stamm`
+        * **Arbeitsbereiche**  --  `StammArbeitsbereiche`
+          * **Ausbildung**  --  `StammAusbildung`
+          * **Erwachsenenarbeit**  --  `StammErwachsenenarbeit`
+          * **Findungskommission**  --  `StammFindungskommission`
+          * **IT**  --  `StammIt`
+          * **Inklusion**  --  `StammInklusion`
+          * **Internationales**  --  `StammInternationales`
+          * **Pfadfinder*innenstufe**  --  `StammPfadfinderstufe`
+          * **Politische Bildung/Politik und Gesellschaft**  --  `StammPolitischeBildungPolitikUndGesellschaft`
+          * **Rainbow**  --  `StammRainbow`
+          * **Ranger/Rover-Stufe**  --  `StammRangerRoverstufe`
+          * **Sonstiger Arbeitsbereich**  --  `StammSonstiges`
+          * **Stufen**  --  `StammStufen`
+          * **Wachstum und Stämme**  --  `StammWachstumUndStaemme`
+          * **Wölflingsstufe**  --  `StammWoelflingsstufe`
+          * **intakt**  --  `StammIntakt`
+            * **intakt - Macht und Miteinander**  --  `StammIntaktMachtUndMiteinander`
+            * **intakt - Prävention und Intervention**  --  `StammIntaktPraeventionUndIntervention`
+            * **intakt - psychische Gesundheit**  --  `StammIntaktPsychischeGesundheit`
+          * **Öffentlichkeitsarbeit/Medien**  --  `StammOeffentlichkeitsarbeitMedien`
+        * **Förderverein**  --  `Foerderverein`
+        * **Gruppen¹**  --  `Gruppen`
+          * **Gilde**  --  `Gilde`
+            * **Sippe**  --  `Sippe`
+          * **Meute**  --  `Meute`
+          * **Runde**  --  `Runde`
+        * **Gruppierungsspezifisches Gremium**  --  `GruppierungsspezifischesGremium`
+        * **Heim/Zeltplatz/Liegenschaft**  --  `HeimZeltplatzLiegenschaft`
+        * **Mitglieder¹**  --  `Mitglieder`
+    * **Diözesansgeschäftsstelle**  --  `Landesgeschaeftsstelle`
+    * **Diözesansversammlung¹**  --  `Landesversammlung`
+    * **Diözesansvorstand¹**  --  `Landesvorstand`
+  * **Ombudsrat¹**  --  `Ombudsrat`
+  * **Projekte**  --  `Projekte`
+    * **Projekt**  --  `Projekt`
+      * **Bereich**  --  `Bereich`
+  * **Versammlung**  --  `Bundesversammlung`
+
+---
+
+
 <!-- roles:start -->
     ▲ = Layer group
     ¹ = Static group (only one can exist, name is predefined)
