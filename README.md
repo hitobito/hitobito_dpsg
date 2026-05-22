@@ -532,5 +532,6 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
     * _Technik: []_
     * _Versammlungsleitung: []_
 
-Output of rake app:hitobito:roles. Update it 
+Output of `rake app:hitobito:roles`
+(call `rake app:hitobito:roles:update_readme` to update it)
 <!-- roles:end -->
