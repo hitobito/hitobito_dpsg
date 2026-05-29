@@ -445,6 +445,26 @@ de:
         one: Sonstiger Arbeitsbereich
         other: Sonstige Arbeitsbereiche
 
+      group/stamm_gruppe_biber:
+        one: Biber
+        other: Biber
+
+      group/stamm_gruppe_woelflinge:
+        one: Wölflinge
+        other: Wölflinge
+
+      group/stamm_gruppe_jungpfadfinder:
+        one: Jungpfadfinder*innen
+        other: Jungpfadfinder*innen
+
+      group/stamm_gruppe_pfadfinder:
+        one: Pfadfinder*innen
+        other: Pfadfinder*innen
+
+      group/stamm_gruppe_rover:
+        one: Rover
+        other: Rover
+
       group/stamm_arbeitsbereich/beauftragt:
         one: Stammesbeauftragte*r
         description: Stammesbeauftragte*r
@@ -505,22 +525,6 @@ de:
       group/stamm:
         one: Stamm
         other: Stämme
-
-      group/meute:
-        one: Meute
-        other: Meuten
-
-      group/gilde:
-        one: Gilde
-        other: Gilden
-
-      group/sippe:
-        one: Sippe
-        other: Sippen
-
-      group/runde:
-        one: Runde
-        other: Runden
 
       ### ROLES
 
@@ -842,39 +846,59 @@ de:
         one: Stammesgeschäftsstelle
         description: Stammesgeschäftsstelle
 
-      group/meute/meutenfuehrung:
-        one: Meutenführer*in
-        description: Meutenführer*in
-      group/meute/meutenfuehrung_stv:
-        one: Stv. Meutenführer*in
-        description: Stv. Meutenführer*in
-      group/meute/woelfling:
-        one: Wölfling
-        description: Wölfling
+      group/stamm_gruppe/mitglied:
+        one: Mitglied
+        description: Mitglied
+      group/stamm_gruppe_rover/mitglied:
+        one: Mitglied
+        description: Mitglied
+      group/stamm_gruppe_woelflinge/mitglied:
+        one: Mitglied
+        description: Mitglied
+      group/stamm_gruppe_jungpfadfinder/mitglied:
+        one: Mitglied
+        description: Mitglied
+      group/stamm_gruppe_biber/mitglied:
+        one: Mitglied
+        description: Mitglied
+      group/stamm_gruppe_pfadfinder/mitglied:
+        one: Mitglied
+        description: Mitglied
 
-      group/gilde/gildenfuehrung:
-        one: Gildenführer*in
-        description: Gildenführer*in
-      group/gilde/gildenfuehrung_stv:
-        one: Stv. Gildenführer*in
-        description: Stv. Gildenführer*in
+      group/stamm_gruppe/leitung:
+        one: Leiter*in
+        description: Leiter*in
+      group/stamm_gruppe_rover/leitung:
+        one: Leiter*in
+        description: Leiter*in
+      group/stamm_gruppe_woelflinge/leitung:
+        one: Leiter*in
+        description: Leiter*in
+      group/stamm_gruppe_jungpfadfinder/leitung:
+        one: Leiter*in
+        description: Leiter*in
+      group/stamm_gruppe_biber/leitung:
+        one: Leiter*in
+        description: Leiter*in
+      group/stamm_gruppe_pfadfinder/leitung:
+        one: Leiter*in
+        description: Leiter*in
 
-      group/sippe/sippenfuehrung:
-        one: Sippenführer*in
-        description: Sippenführer*in
-      group/sippe/sippenfuehrung_stv:
-        one: Stv. Sippenführer*in
-        description: Stv. Sippenführer*in
-      group/sippe/pfadfinder:
-        one: Pfadfinder*in
-        description: Pfadfinder*in
-
-      group/runde/rundensprecher:
-        one: Rundensprecher*in
-        description: Rundensprecher*in
-      group/runde/rundensprecher_stv:
-        one: Stv. Rundensprecher*in
-        description: Stv. Rundensprecher*in
-      group/runde/ranger_rover:
-        one: Ranger/Rover
-        description: Ranger/Rover
+      group/stamm_gruppe/hilfs_leitung:
+        one: Hilfsleiter*in
+        description: Hilfsleiter*in
+      group/stamm_gruppe_rover/hilfs_leitung:
+        one: Hilfsleiter*in
+        description: Hilfsleiter*in
+      group/stamm_gruppe_woelflinge/hilfs_leitung:
+        one: Hilfsleiter*in
+        description: Hilfsleiter*in
+      group/stamm_gruppe_jungpfadfinder/hilfs_leitung:
+        one: Hilfsleiter*in
+        description: Hilfsleiter*in
+      group/stamm_gruppe_biber/hilfs_leitung:
+        one: Hilfsleiter*in
+        description: Hilfsleiter*in
+      group/stamm_gruppe_pfadfinder/hilfs_leitung:
+        one: Hilfsleiter*in
+        description: Hilfsleiter*in
