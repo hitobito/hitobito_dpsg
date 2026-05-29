@@ -22,6 +22,26 @@ module HitobitoDpsg
     config.to_prepare do
       # extend application classes here
       # Group.include Dpsg::Group
+
+      %i[Bezirk Bund Land Stamm].each do |prefix|
+        ::Group.const_get("#{prefix}Arbeitsbereiche").children(
+          ::Group.const_get("#{prefix}Biber"),
+          ::Group.const_get("#{prefix}Jungpfadfinderstufe")
+        )
+
+        ::Group.const_get("#{prefix}Stufen").children(
+          ::Group.const_get("#{prefix}Biber"),
+          ::Group.const_get("#{prefix}Jungpfadfinderstufe")
+        )
+      end
+
+      ::Group::Gruppen.children(
+        ::Group::StammGruppeBiber,
+        ::Group::StammGruppeJungpfadfinder,
+        ::Group::StammGruppePfadfinder,
+        ::Group::StammGruppeRover,
+        ::Group::StammGruppeWoelflinge
+      )
     end
 
     initializer "dpsg.add_settings" do |_app|
