@@ -846,9 +846,6 @@ de:
         one: Stammesgeschäftsstelle
         description: Stammesgeschäftsstelle
 
-      group/stamm_gruppe/mitglied:
-        one: Mitglied
-        description: Mitglied
       group/stamm_gruppe_rover/mitglied:
         one: Mitglied
         description: Mitglied
@@ -865,9 +862,6 @@ de:
         one: Mitglied
         description: Mitglied
 
-      group/stamm_gruppe/leitung:
-        one: Leiter*in
-        description: Leiter*in
       group/stamm_gruppe_rover/leitung:
         one: Leiter*in
         description: Leiter*in
@@ -884,21 +878,18 @@ de:
         one: Leiter*in
         description: Leiter*in
 
-      group/stamm_gruppe/hilfs_leitung:
+      group/stamm_gruppe_rover/hilfsleitung:
         one: Hilfsleiter*in
         description: Hilfsleiter*in
-      group/stamm_gruppe_rover/hilfs_leitung:
+      group/stamm_gruppe_woelflinge/hilfsleitung:
         one: Hilfsleiter*in
         description: Hilfsleiter*in
-      group/stamm_gruppe_woelflinge/hilfs_leitung:
+      group/stamm_gruppe_jungpfadfinder/hilfsleitung:
         one: Hilfsleiter*in
         description: Hilfsleiter*in
-      group/stamm_gruppe_jungpfadfinder/hilfs_leitung:
+      group/stamm_gruppe_biber/hilfsleitung:
         one: Hilfsleiter*in
         description: Hilfsleiter*in
-      group/stamm_gruppe_biber/hilfs_leitung:
-        one: Hilfsleiter*in
-        description: Hilfsleiter*in
-      group/stamm_gruppe_pfadfinder/hilfs_leitung:
+      group/stamm_gruppe_pfadfinder/hilfsleitung:
         one: Hilfsleiter*in
         description: Hilfsleiter*in

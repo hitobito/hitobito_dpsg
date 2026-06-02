@@ -46,6 +46,8 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
         * Mitarbeiter*in: []
       * Arbeitsbereiche
       * Stufen
+      * Biber
+      * Jungpfadfinder*innenstufe
       * Wölflingsstufe
       * Pfadfinder*innenstufe
       * Ranger/Rover-Stufe
@@ -98,6 +100,8 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
         * Techniker*in: []
       * Arbeitsbereiche
       * Stufen
+      * Biber
+      * Jungpfadfinder*innenstufe
       * Wölflingsstufe
       * Pfadfinder*innenstufe
       * Ranger/Rover-Stufe
@@ -133,6 +137,8 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
         * Techniker*in: []
       * Arbeitsbereiche
       * Stufen
+      * Biber
+      * Jungpfadfinder*innenstufe
       * Wölflingsstufe
       * Pfadfinder*innenstufe
       * Ranger/Rover-Stufe
@@ -175,6 +181,7 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
         * Stammesgeschäftsstelle: []
       * Arbeitsbereiche
       * Stufen
+      * Jungpfadfinder*innenstufe
       * Wölflingsstufe
       * Pfadfinder*innenstufe
       * Ranger/Rover-Stufe
@@ -194,21 +201,26 @@ of the "Deutsche Pfadfinder*innenschaft Sankt Georg"
       * Wachstum und Stämme
       * Sonstiger Arbeitsbereich
       * Gruppen
-      * Meute
-        * Meutenführer*in: [:group_read]
-        * Stv. Meutenführer*in: [:group_read]
-        * Wölfling: []
-      * Gilde
-        * Gildenführer*in: [:group_and_below_read]
-        * Stv. Gildenführer*in: [:group_and_below_read]
-      * Sippe
-        * Sippenführer*in: [:group_read]
-        * Stv. Sippenführer*in: [:group_read]
-        * Pfadfinder*in: []
-      * Runde
-        * Rundensprecher*in: [:group_read]
-        * Stv. Rundensprecher*in: [:group_read]
-        * Ranger/Rover: []
+      * Biber
+        * Leiter*in: [:group_read]
+        * Hilfsleiter*in: [:group_read]
+        * Mitglied: []
+      * Jungpfadfinder*innen
+        * Leiter*in: [:group_read]
+        * Hilfsleiter*in: [:group_read]
+        * Mitglied: []
+      * Wölflinge
+        * Leiter*in: [:group_read]
+        * Hilfsleiter*in: [:group_read]
+        * Mitglied: []
+      * Pfadfinder*innen
+        * Leiter*in: [:group_read]
+        * Hilfsleiter*in: [:group_read]
+        * Mitglied: []
+      * Rover
+        * Leiter*in: [:group_read]
+        * Hilfsleiter*in: [:group_read]
+        * Mitglied: []
     * Global
       * Mitglieder
         * Ordentliche Mitgliedschaft: []
