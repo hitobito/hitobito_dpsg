@@ -6,6 +6,6 @@
 #  https://github.com/hitobito/hitobito_dpsg.
 
 
-require Rails.root.join("..", "hitobito_pfadi_de", "db", "seeds", "support", "fee_kinds_seeder")
+require HitobitoPfadiDe::Wagon.root.join("db", "seeds", "support", "fee_kinds_seeder")
 
 FeeKindsSeeder.new.seed_fee_kinds
