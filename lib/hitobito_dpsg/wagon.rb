@@ -35,13 +35,7 @@ module HitobitoDpsg
         )
       end
 
-      ::Group::Gruppen.children(
-        ::Group::StammGruppeBiber,
-        ::Group::StammGruppeJungpfadfinder,
-        ::Group::StammGruppePfadfinder,
-        ::Group::StammGruppeRover,
-        ::Group::StammGruppeWoelflinge
-      )
+      ::Group::Gruppen.children ::Group::StammGruppeBiber, ::Group::StammGruppeJungpfadfinder
     end
 
     initializer "dpsg.add_settings" do |_app|

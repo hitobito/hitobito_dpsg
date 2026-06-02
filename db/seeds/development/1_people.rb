@@ -11,7 +11,7 @@ require Rails.root.join("db", "seeds", "support", "person_seeder")
 class DpsgPersonSeeder < PersonSeeder
   def amount(role_type)
     case role_type.name.demodulize
-    when "Woelfling", "Pfadfinder", "RangerRover", "Mitglied" then 3
+    when "Mitglied" then 3
     else 1
     end
   end
