@@ -893,3 +893,7 @@ de:
       group/stamm_gruppe_pfadfinder/hilfsleitung:
         one: Hilfsleiter*in
         description: Hilfsleiter*in
+    attributes:
+      group:
+        stamm_typen:
+          other: Siedlung
