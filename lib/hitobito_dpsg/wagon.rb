@@ -36,6 +36,11 @@ module HitobitoDpsg
       end
 
       ::Group::Gruppen.children ::Group::StammGruppeBiber, ::Group::StammGruppeJungpfadfinder
+
+      Group::Stamm.used_attributes += [:eingeschraenkt]
+      [Group::Bundesebene, Group::Landesverband, Group::Bezirk, Group::Stamm].each do |layer_group|
+        layer_group.used_attributes += [:strukturnummer]
+      end
     end
 
     initializer "dpsg.add_settings" do |_app|
