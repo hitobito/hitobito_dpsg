@@ -6,5 +6,5 @@
 #  https://github.com/hitobito/hitobito_dpsg.
 
 module HitobitoDpsg
-  VERSION = "2.9.16"
+  VERSION = "2.10.0"
 end
