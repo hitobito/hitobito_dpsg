@@ -31,6 +31,9 @@ describe :self_registration do
   before do
     group.self_registration_role_type = self_registration_role
     group.save!
+    unless group.self_registration_active?
+      skip("for now selfreg is always disabled in pfadi_de")
+    end
 
     allow(Settings.groups.self_registration).to receive(:enabled).and_return(true)
   end
