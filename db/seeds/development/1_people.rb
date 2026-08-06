@@ -15,6 +15,13 @@ class DpsgPersonSeeder < PersonSeeder
     else 1
     end
   end
+
+  def person_attributes(role_type)
+    super.tap do |attrs|
+      attrs[:should_recalculate_last_entry_date_with_fee_kind] = true
+    end
+  end
+
 end
 
 puzzlers = [
@@ -50,3 +57,5 @@ root = Group.root
 devs.each do |name, email|
   seeder.seed_developer(name, email, root, Group::Bundesebene::MVAdmin)
 end
+
+PfadiDe::RecalculateLastEntryDatesJob.new.send(:perform_internal)
