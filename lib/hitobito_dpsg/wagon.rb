@@ -41,6 +41,21 @@ module HitobitoDpsg
       [Group::Bundesebene, Group::Landesverband, Group::Bezirk, Group::Stamm].each do |layer_group|
         layer_group.used_attributes += [:strukturnummer]
       end
+
+      # Eine Person kann zu jedem Zeitpunkt nur eine Ordentliche- oder Fördermitgliedschaft haben.
+      [Group::Mitglieder::OrdentlicheMitgliedschaft,
+        Group::Mitglieder::Foerdermitgliedschaft].each do |membership_role|
+        membership_role.mutually_exclusive_roles :membership_global, scope: :global
+      end
+
+      # Eine Person kann in jedem Stamm zu jedem Zeitpunkt nur eine Mitgliedschaft haben. Eine
+      # Zweitmitgliedschaft ist nur erlaubt in einem Stamm in dem nicht bereits eine
+      # andere Mitgliedschaft vorhanden ist.
+      [Group::Mitglieder::OrdentlicheMitgliedschaft,
+        Group::Mitglieder::Foerdermitgliedschaft,
+        Group::Mitglieder::Zweitmitgliedschaft].each do |membership_role|
+        membership_role.mutually_exclusive_roles :membership_stamm, scope: :layer
+      end
     end
 
     initializer "dpsg.add_settings" do |_app|

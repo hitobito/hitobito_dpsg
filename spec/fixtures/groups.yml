@@ -7,13 +7,45 @@
 root:
   parent:
   lft: 1
-  rgt: 2
+  rgt: 10
   name: Hauptgruppe
   type: Group::Bundesebene
   email: root@example.net
   zip_code: 2843
   town: Neu Carlscheid
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:root) %>
+
+adler:
+  parent: root
+  lft: 2
+  rgt: 5
+  name: Stamm Adler
+  type: Group::Stamm
+  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:adler) %>
+
+adler_mitglieder:
+  parent: adler
+  lft: 3
+  rgt: 4
+  name: Mitglieder
+  type: Group::Mitglieder
+  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:adler) %>
+
+biber:
+  parent: root
+  lft: 6
+  rgt: 9
+  name: Stamm Biber
+  type: Group::Stamm
+  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:biber) %>
+
+biber_mitglieder:
+  parent: biber
+  lft: 7
+  rgt: 8
+  name: Mitglieder
+  type: Group::Mitglieder
+  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:biber) %>
 
 # TODO add more groups
 # you could generate a good setup manually and dump it with rake fixtures:groups
