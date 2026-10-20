@@ -19,7 +19,7 @@ module HitobitoDpsg
       #{config.root}/app/jobs
     ]
 
-    config.to_prepare do
+    config.to_prepare do # rubocop:disable Metrics/BlockLength
       # extend application classes here
       # Group.include Dpsg::Group
 
@@ -56,6 +56,24 @@ module HitobitoDpsg
         Group::Mitglieder::Zweitmitgliedschaft].each do |membership_role|
         membership_role.mutually_exclusive_in :membership_stamm, scope: :layer
       end
+
+      # Eine Mitgliedschaft im Stamm ist Voraussetzung für bestimmte Rollen im selben Stamm. Endet
+      # die Mitgliedschaft, werden die abhängigen Rollen gekürzt.
+      [Group::Mitglieder::OrdentlicheMitgliedschaft,
+        Group::Mitglieder::Foerdermitgliedschaft,
+        Group::Mitglieder::Zweitmitgliedschaft].each do |membership_role|
+        membership_role.provides_role :stamm_mitgliedschaft
+      end
+      Group::StammGruppePfadfinder::Mitglied
+        .depends_on_role :stamm_mitgliedschaft, scope: :layer, on_uncovered: :cascade
+
+      # Eine Zweitmitgliedschaft setzt eine Ordentliche- oder Fördermitgliedschaft voraus.
+      [Group::Mitglieder::OrdentlicheMitgliedschaft,
+        Group::Mitglieder::Foerdermitgliedschaft].each do |membership_role|
+        membership_role.provides_role :dpsg_mitgliedschaft
+      end
+      Group::Mitglieder::Zweitmitgliedschaft
+        .depends_on_role :dpsg_mitgliedschaft, scope: :global, on_uncovered: :cascade
     end
 
     initializer "dpsg.add_settings" do |_app|
