@@ -11,10 +11,19 @@ admin:
 
 leader:
   person: leader
-  group: root
+  group: adler_pfadfinder
   type: Group::StammGruppePfadfinder::Leitung
+  start_on: '2025-01-01'
 
 member:
   person: member
-  group: root
+  group: adler_pfadfinder
   type: Group::StammGruppePfadfinder::Mitglied
+  start_on: '2025-06-01'
+
+member_ordentliche_mitgliedschaft:
+  person: member
+  group: adler_mitglieder
+  type: Group::Mitglieder::OrdentlicheMitgliedschaft
+  fee_kind: top_fee_kind
+  start_on: '2025-01-01'

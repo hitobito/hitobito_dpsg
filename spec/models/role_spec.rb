@@ -12,11 +12,10 @@ describe Role do
     let(:person) { people(:member) }
     let(:adler_mitglieder) { groups(:adler_mitglieder) } # layer: adler
     let(:biber_mitglieder) { groups(:biber_mitglieder) } # layer: biber
+    let(:ordentliche_in_adler) { roles(:member_ordentliche_mitgliedschaft) }
 
-    let!(:ordentliche_in_adler) do
-      Group::Mitglieder::OrdentlicheMitgliedschaft.create!(
-        person: person, group: adler_mitglieder
-      )
+    def create_ordentliche_in_biber
+      Group::Mitglieder::OrdentlicheMitgliedschaft.create!(person: person, group: biber_mitglieder)
     end
 
     describe "global exclusivity of Ordentliche- and Foerdermitgliedschaft" do
@@ -78,6 +77,7 @@ describe Role do
 
       it "accepts a membership after the previous one ended" do
         ordentliche_in_adler.update_columns(end_on: 1.month.ago.to_date)
+        create_ordentliche_in_biber
 
         role = Group::Mitglieder::Zweitmitgliedschaft
           .new(person: person, group: adler_mitglieder)
@@ -98,6 +98,7 @@ describe Role do
 
       it "accepts a backdated start_on overlapping an ended membership" do
         ordentliche_in_adler.update_columns(end_on: Date.yesterday)
+        create_ordentliche_in_biber
 
         role = Group::Mitglieder::Zweitmitgliedschaft.new(
           person: person, group: adler_mitglieder,
@@ -114,6 +115,44 @@ describe Role do
         )
 
         expect(role).not_to be_valid
+      end
+    end
+  end
+
+  describe "prerequisite membership roles (hitobito/hitobito_dpsg#27)" do
+    it "has consistent fixtures" do
+      expect(roles(:member)).to be_valid
+    end
+
+    it "lets Ordentliche- and Foerdermitgliedschaft provide a Stamm and a DPSG membership" do
+      [Group::Mitglieder::OrdentlicheMitgliedschaft,
+        Group::Mitglieder::Foerdermitgliedschaft].each do |type|
+        expect(type.provided_prerequisite_categories)
+          .to contain_exactly(:stamm_mitgliedschaft, :dpsg_mitgliedschaft)
+      end
+    end
+
+    it "lets a Zweitmitgliedschaft provide a Stamm membership" do
+      expect(Group::Mitglieder::Zweitmitgliedschaft.provided_prerequisite_categories)
+        .to contain_exactly(:stamm_mitgliedschaft)
+    end
+
+    it "requires a Stamm membership in the same Stamm for a Pfadfinder*in" do
+      expect(Group::StammGruppePfadfinder::Mitglied.dependent_role_configurations)
+        .to contain_exactly(have_attributes(category: :stamm_mitgliedschaft, scope: :layer,
+          validate_past: false, on_uncovered: :cascade))
+    end
+
+    it "requires a DPSG membership in any Stamm for a Zweitmitgliedschaft" do
+      expect(Group::Mitglieder::Zweitmitgliedschaft.dependent_role_configurations)
+        .to contain_exactly(have_attributes(category: :dpsg_mitgliedschaft, scope: :global,
+          validate_past: false, on_uncovered: :cascade))
+    end
+
+    it "requires no prerequisite for Ordentliche- and Foerdermitgliedschaft" do
+      [Group::Mitglieder::OrdentlicheMitgliedschaft,
+        Group::Mitglieder::Foerdermitgliedschaft].each do |type|
+        expect(type.dependent_role_configurations).to be_empty
       end
     end
   end
