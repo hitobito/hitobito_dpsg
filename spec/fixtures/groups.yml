@@ -7,7 +7,7 @@
 root:
   parent:
   lft: 1
-  rgt: 10
+  rgt: 14
   name: Hauptgruppe
   type: Group::Bundesebene
   email: root@example.net
@@ -18,7 +18,7 @@ root:
 adler:
   parent: root
   lft: 2
-  rgt: 5
+  rgt: 9
   name: Stamm Adler
   type: Group::Stamm
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:adler) %>
@@ -31,18 +31,34 @@ adler_mitglieder:
   type: Group::Mitglieder
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:adler) %>
 
+adler_gruppen:
+  parent: adler
+  lft: 5
+  rgt: 8
+  name: Gruppen
+  type: Group::Gruppen
+  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:adler) %>
+
+adler_pfadfinder:
+  parent: adler_gruppen
+  lft: 6
+  rgt: 7
+  name: Pfadfinder*innen
+  type: Group::StammGruppePfadfinder
+  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:adler) %>
+
 biber:
   parent: root
-  lft: 6
-  rgt: 9
+  lft: 10
+  rgt: 13
   name: Stamm Biber
   type: Group::Stamm
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:biber) %>
 
 biber_mitglieder:
   parent: biber
-  lft: 7
-  rgt: 8
+  lft: 11
+  rgt: 12
   name: Mitglieder
   type: Group::Mitglieder
   layer_group_id: <%= ActiveRecord::FixtureSet.identify(:biber) %>
