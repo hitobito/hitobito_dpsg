@@ -11,16 +11,33 @@ admin:
   gender: m
   contact_data_visible: true
   primary_group: root
+  birthday: '1985-09-08'
+  street: Kesselhaken
+  housenumber: '23'
+  zip_code: '34376'
+  town: Immenhausen
 
 leader:
   first_name: A
   last_name: Leader
   email: a.leader@hitobito.example.com
+  gender: m
   contact_data_visible: true
   primary_group: root
+  birthday: '1996-06-30'
+  street: Gutenbergstr.
+  housenumber: '94a'
+  zip_code: '83947'
+  town: Büttnerland
 
 member:
   first_name: My
   last_name: Member
   email: member0@hitobito.example.com
+  gender: w
   primary_group: root
+  birthday: '2005-03-14'
+  street: Kaiserstraße
+  housenumber: '42'
+  zip_code: '76133'
+  town: Karlsruhe
