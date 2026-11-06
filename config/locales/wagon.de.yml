@@ -3,7 +3,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_dpsg.
 
-
 de:
   activerecord:
     models:
@@ -62,6 +61,22 @@ de:
         one: Biber
         other: Biber
 
+      group/bund_biber/beauftragt:
+        one: Bundesbeauftragte*r
+        description: Bundesbeauftragte*r
+
+      group/bund_biber/ak_leitung:
+        one: AK Leiter*in
+        description: AK Leiter*in
+
+      group/bund_biber/ak_mitarbeiter:
+        one: AK Mitarbeiter*in
+        description: AK Mitarbeiter*in
+
+      group/bund_biber/ak_freier_mitarbeiter:
+        one: AK Freie*r Mitarbeiter*in
+        description: AK Freie*r Mitarbeiter*in
+
       group/bund_woelflingsstufe:
         one: Wölflingsstufe
         other: Arbeitsbereiche
@@ -69,6 +84,22 @@ de:
       group/bund_jungpfadfinderstufe:
         one: Jungpfadfinder*innenstufe
         other: Jungpfadfinder*innenstufe
+
+      group/bund_jungpfadfinderstufe/beauftragt:
+        one: Bundesbeauftragte*r
+        description: Bundesbeauftragte*r
+
+      group/bund_jungpfadfinderstufe/ak_leitung:
+        one: AK Leiter*in
+        description: AK Leiter*in
+
+      group/bund_jungpfadfinderstufe/ak_mitarbeiter:
+        one: AK Mitarbeiter*in
+        description: AK Mitarbeiter*in
+
+      group/bund_jungpfadfinderstufe/ak_freier_mitarbeiter:
+        one: AK Freie*r Mitarbeiter*in
+        description: AK Freie*r Mitarbeiter*in
 
       group/bund_pfadfinderstufe:
         one: Pfadfinder*innenstufe
@@ -142,19 +173,6 @@ de:
         one: Sonstiger Arbeitsbereich
         other: Sonstige Arbeitsbereiche
 
-      group/bund_arbeitsbereich/beauftragt:
-        one: Bundesbeauftragte*r
-        description: Bundesbeauftragte*r
-      group/bund_arbeitsbereich/ak_leitung:
-        one: AK Leiter*in
-        description: AK Leiter*in
-      group/bund_arbeitsbereich/ak_mitarbeiter:
-        one: AK Mitarbeiter*in
-        description: AK Mitarbeiter*in
-      group/bund_arbeitsbereich/ak_freier_mitarbeiter:
-        one: AK Freie*r Mitarbeiter*in
-        description: AK Freie*r Mitarbeiter*in
-
       group/land_arbeitsbereiche:
         one: Arbeitsbereiche
         other: Arbeitsbereiche
@@ -163,6 +181,22 @@ de:
         one: Biber
         other: Biber
 
+      group/land_biber/beauftragt:
+        one: Landesbeauftragte*r
+        description: Landesbeauftragte*r
+
+      group/land_biber/ak_leitung:
+        one: AK Leiter*in
+        description: AK Leiter*in
+
+      group/land_biber/ak_mitarbeiter:
+        one: AK Mitarbeiter*in
+        description: AK Mitarbeiter*in
+
+      group/land_biber/ak_freier_mitarbeiter:
+        one: AK Freie*r Mitarbeiter*in
+        description: AK Freie*r Mitarbeiter*in
+
       group/land_woelflingsstufe:
         one: Wölflingsstufe
         other: Arbeitsbereiche
@@ -170,6 +204,22 @@ de:
       group/land_jungpfadfinderstufe:
         one: Jungpfadfinder*innenstufe
         other: Jungpfadfinder*innenstufe
+
+      group/land_jungpfadfinderstufe/beauftragt:
+        one: Landesbeauftragte*r
+        description: Landesbeauftragte*r
+
+      group/land_jungpfadfinderstufe/ak_leitung:
+        one: AK Leiter*in
+        description: AK Leiter*in
+
+      group/land_jungpfadfinderstufe/ak_mitarbeiter:
+        one: AK Mitarbeiter*in
+        description: AK Mitarbeiter*in
+
+      group/land_jungpfadfinderstufe/ak_freier_mitarbeiter:
+        one: AK Freie*r Mitarbeiter*in
+        description: AK Freie*r Mitarbeiter*in
 
       group/land_pfadfinderstufe:
         one: Pfadfinder*innenstufe
@@ -243,19 +293,6 @@ de:
         one: Sonstiger Arbeitsbereich
         other: Sonstige Arbeitsbereiche
 
-      group/land_arbeitsbereich/beauftragt:
-        one: Diözesansbeauftragte*r
-        description: Diözesansbeauftragte*r
-      group/land_arbeitsbereich/ak_leitung:
-        one: AK Leiter*in
-        description: AK Leiter*in
-      group/land_arbeitsbereich/ak_mitarbeiter:
-        one: AK Mitarbeiter*in
-        description: AK Mitarbeiter*in
-      group/land_arbeitsbereich/ak_freier_mitarbeiter:
-        one: AK Freie*r Mitarbeiter*in
-        description: AK Freie*r Mitarbeiter*in
-
       group/bezirk_arbeitsbereiche:
         one: Arbeitsbereiche
         other: Arbeitsbereiche
@@ -264,6 +301,22 @@ de:
         one: Biber
         other: Biber
 
+      group/bezirk_biber/beauftragt:
+        one: Bezirksbeauftragte*r
+        description: Bezirksbeauftragte*r
+
+      group/bezirk_biber/ak_leitung:
+        one: AK Leiter*in
+        description: AK Leiter*in
+
+      group/bezirk_biber/ak_mitarbeiter:
+        one: AK Mitarbeiter*in
+        description: AK Mitarbeiter*in
+
+      group/bezirk_biber/ak_freier_mitarbeiter:
+        one: AK Freie*r Mitarbeiter*in
+        description: AK Freie*r Mitarbeiter*in
+
       group/bezirk_woelflingsstufe:
         one: Wölflingsstufe
         other: Arbeitsbereiche
@@ -271,6 +324,22 @@ de:
       group/bezirk_jungpfadfinderstufe:
         one: Jungpfadfinder*innenstufe
         other: Jungpfadfinder*innenstufe
+
+      group/bezirk_jungpfadfinderstufe/beauftragt:
+        one: Bezirksbeauftragte*r
+        description: Bezirksbeauftragte*r
+
+      group/bezirk_jungpfadfinderstufe/ak_leitung:
+        one: AK Leiter*in
+        description: AK Leiter*in
+
+      group/bezirk_jungpfadfinderstufe/ak_mitarbeiter:
+        one: AK Mitarbeiter*in
+        description: AK Mitarbeiter*in
+
+      group/bezirk_jungpfadfinderstufe/ak_freier_mitarbeiter:
+        one: AK Freie*r Mitarbeiter*in
+        description: AK Freie*r Mitarbeiter*in
 
       group/bezirk_pfadfinderstufe:
         one: Pfadfinder*innenstufe
@@ -344,19 +413,6 @@ de:
         one: Sonstiger Arbeitsbereich
         other: Sonstige Arbeitsbereiche
 
-      group/bezirk_arbeitsbereich/beauftragt:
-        one: Bezirksbeauftragte*r
-        description: Bezirksbeauftragte*r
-      group/bezirk_arbeitsbereich/ak_leitung:
-        one: AK Leiter*in
-        description: AK Leiter*in
-      group/bezirk_arbeitsbereich/ak_mitarbeiter:
-        one: AK Mitarbeiter*in
-        description: AK Mitarbeiter*in
-      group/bezirk_arbeitsbereich/ak_freier_mitarbeiter:
-        one: AK Freie*r Mitarbeiter*in
-        description: AK Freie*r Mitarbeiter*in
-
       group/stamm_arbeitsbereiche:
         one: Arbeitsbereiche
         other: Arbeitsbereiche
@@ -365,6 +421,22 @@ de:
         one: Biber
         other: Biber
 
+      group/stamm_biber/beauftragt:
+        one: Stammesbeauftragte*r
+        description: Stammesbeauftragte*r
+
+      group/stamm_biber/ak_leitung:
+        one: AK Leiter*in
+        description: AK Leiter*in
+
+      group/stamm_biber/ak_mitarbeiter:
+        one: AK Mitarbeiter*in
+        description: AK Mitarbeiter*in
+
+      group/stamm_biber/ak_freier_mitarbeiter:
+        one: AK Freie*r Mitarbeiter*in
+        description: AK Freie*r Mitarbeiter*in
+
       group/stamm_woelflingsstufe:
         one: Wölflingsstufe
         other: Arbeitsbereiche
@@ -372,6 +444,22 @@ de:
       group/stamm_jungpfadfinderstufe:
         one: Jungpfadfinder*innenstufe
         other: Jungpfadfinder*innenstufe
+
+      group/stamm_jungpfadfinderstufe/beauftragt:
+        one: Stammesbeauftragte*r
+        description: Stammesbeauftragte*r
+
+      group/stamm_jungpfadfinderstufe/ak_leitung:
+        one: AK Leiter*in
+        description: AK Leiter*in
+
+      group/stamm_jungpfadfinderstufe/ak_mitarbeiter:
+        one: AK Mitarbeiter*in
+        description: AK Mitarbeiter*in
+
+      group/stamm_jungpfadfinderstufe/ak_freier_mitarbeiter:
+        one: AK Freie*r Mitarbeiter*in
+        description: AK Freie*r Mitarbeiter*in
 
       group/stamm_pfadfinderstufe:
         one: Pfadfinder*innenstufe
@@ -464,19 +552,6 @@ de:
       group/stamm_gruppe_rover:
         one: Rover
         other: Rover
-
-      group/stamm_arbeitsbereich/beauftragt:
-        one: Stammesbeauftragte*r
-        description: Stammesbeauftragte*r
-      group/stamm_arbeitsbereich/ak_leitung:
-        one: AK Leiter*in
-        description: AK Leiter*in
-      group/stamm_arbeitsbereich/ak_mitarbeiter:
-        one: AK Mitarbeiter*in
-        description: AK Mitarbeiter*in
-      group/stamm_arbeitsbereich/ak_freier_mitarbeiter:
-        one: AK Freie*r Mitarbeiter*in
-        description: AK Freie*r Mitarbeiter*in
 
       group/gruppierungsspezifisches_gremium:
         one: Gruppierungsspezifisches Gremium

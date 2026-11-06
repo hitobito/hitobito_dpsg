@@ -6,4 +6,29 @@
 #  https://github.com/hitobito/hitobito_dpsg.
 
 class Group::StammBiber < Group::StammArbeitsbereich
+  ### ROLES
+
+  class Beauftragt < ::Role
+    self.permissions = [:layer_and_below_read]
+    self.sgbviii_required = true
+  end
+
+  class AKLeitung < ::Role
+    self.permissions = [:group_and_below_read]
+    self.sgbviii_required = true
+  end
+
+  class AKMitarbeiter < ::Role
+    self.permissions = [:group_and_below_read]
+    self.sgbviii_required = true
+  end
+
+  class AKFreierMitarbeiter < ::Role
+    self.permissions = []
+  end
+
+  roles Beauftragt,
+    AKLeitung,
+    AKMitarbeiter,
+    AKFreierMitarbeiter
 end
