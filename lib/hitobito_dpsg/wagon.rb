@@ -19,7 +19,7 @@ module HitobitoDpsg
       #{config.root}/app/jobs
     ]
 
-    config.to_prepare do
+    config.to_prepare do # rubocop:disable Metrics/BlockLength
       # extend application classes here
       # Group.include Dpsg::Group
 
@@ -56,6 +56,28 @@ module HitobitoDpsg
         Group::Mitglieder::Zweitmitgliedschaft].each do |membership_role|
         membership_role.mutually_exclusive_in :membership_stamm, scope: :layer
       end
+
+      # Eine aktive Mitgliedschaft (Ordentliche- oder Zweitmitgliedschaft) ist Voraussetzung für
+      # aktive Rollen, im Stamm eine Mitgliedschaft im selben Stamm. Endet die Mitgliedschaft,
+      # werden die abhängigen Rollen gekürzt.
+      [Group::Mitglieder::OrdentlicheMitgliedschaft,
+        Group::Mitglieder::Zweitmitgliedschaft].each do |membership_role|
+        membership_role.provides_role :aktive_mitgliedschaft
+      end
+      Dpsg::ActiveRoles.in_stamm.each do |role_type|
+        role_type.depends_on_role :aktive_mitgliedschaft, scope: :layer, on_uncovered: :cascade
+      end
+      Dpsg::ActiveRoles.above_stamm.each do |role_type|
+        role_type.depends_on_role :aktive_mitgliedschaft, scope: :global, on_uncovered: :cascade
+      end
+
+      # Eine Zweitmitgliedschaft setzt eine Ordentliche- oder Fördermitgliedschaft voraus.
+      [Group::Mitglieder::OrdentlicheMitgliedschaft,
+        Group::Mitglieder::Foerdermitgliedschaft].each do |membership_role|
+        membership_role.provides_role :dpsg_mitgliedschaft
+      end
+      Group::Mitglieder::Zweitmitgliedschaft
+        .depends_on_role :dpsg_mitgliedschaft, scope: :global, on_uncovered: :cascade
     end
 
     initializer "dpsg.add_settings" do |_app|
